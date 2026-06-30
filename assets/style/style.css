@@ -1,0 +1,404 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  color: white;
+}
+
+/* Ini Bagian Navbar */
+
+header {
+  min-height: 100vh;
+}
+header nav.nav-container {
+  width: 100%;
+  padding-block: 1rem;
+  margin-inline: auto;
+  background-color: rgba(15, 23, 42, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav.nav-container h2.panggilan {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-block: 0;
+  padding-inline: 1rem;
+  color: rgb(192, 132, 252);
+  text-decoration: underline;
+}
+
+header nav.nav-container ul.nav-list {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav.nav-container ul.nav-list li {
+  list-style-type: none;
+}
+
+header nav.nav-container ul.nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgb(203, 213, 245);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+header nav.nav-container ul.nav-list li:hover a {
+  background-color: rgb(192, 132, 252);
+  color: rgba(15, 23, 42, 0.7);
+  text-decoration: underline;
+}
+
+header .utama {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header .utama span.nama {
+  color: rgb(192, 132, 252);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+header .utama p {
+  margin-block: 0;
+  color: rgb(203, 213, 245);
+}
+
+/* Ini Bagian Main */
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+main .content {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+/* artikel tentang */
+main .content #tentang,
+main .content #skill,
+main .content #project {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main .content .judul {
+  text-align: center;
+}
+
+main .content #tentang .container-tentang {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 1rem;
+  padding-block: 2rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  border-radius: 5px;
+}
+
+main .content #tentang .tulisan {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main .content #tentang .gambar img {
+  width: 15rem;
+  border-radius: 999px;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+/* artikel skill */
+#skill .html img,
+#skill .css img,
+#skill .tkro img {
+  width: 200px;
+  height: 200px;
+}
+
+#skill .container-skill {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 2rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+#skill .p-skill {
+  padding-inline: 2rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/*artikel project*/
+#project .to-do-list img,
+#project .calculator img,
+#project .simple-header img {
+  width: 480px;
+}
+
+#project .container-project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  gap: 2rem 2rem;
+}
+
+#project .container-project .card {
+  padding: 0;
+}
+
+#project .container-project .to-do-list p a,
+#project .container-project .calculator p a,
+#project .container-project .simple-header p a {
+  text-decoration: none;
+  transition: color 0.2s;
+  color: rgb(192, 132, 252);
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.9);
+}
+
+#project .container-project .to-do-list p a:hover,
+#project .container-project .calculator p a:hover,
+#project .container-project .simple-header p a:hover {
+  text-decoration: underline;
+  color: white;
+  text-shadow: none;
+}
+/* Ini Bagian Aside */
+aside {
+  display: flex;
+  margin-block: 2rem;
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+aside .container-media {
+  display: flex;
+  flex-direction: column;
+}
+
+aside article.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside article.social-media section.connect {
+  display: flex;
+}
+
+aside article.social-media section.connect a {
+  color: white;
+}
+
+aside article.social-media section.connect a:hover {
+  color: rgb(192, 132, 252);
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.9);
+  text-decoration: none;
+}
+
+aside article.social-media {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  padding: 1rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+aside article.info section.card {
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+aside article.info section.card section .atas,
+aside article.info section.card section .bawah {
+  margin-block: 0;
+}
+
+aside article.profile .container-foto {
+  display: flex;
+  align-items: center;
+}
+
+aside article.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside article.profile img {
+  width: 12rem;
+  height: 12rem;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+aside article.profile .biodata {
+  text-align: center;
+}
+
+/* Ini Bagian Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background-color: rgba(15, 23, 42, 0.7);
+  margin-top: 2rem;
+}
+
+footer p.judul {
+  font-size: 1rem;
+  font-weight: 100;
+  color: rgb(203, 213, 245);
+  order: 1;
+}
+
+footer p.copyright {
+  font-size: 1rem;
+  font-weight: 100;
+  color: rgb(203, 213, 245);
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  header nav.nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header nav.nav-container ul.nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav.nav-container ul.nav-list li a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  header .utama h1 {
+    font-size: 1.5rem;
+  }
+  header .utama span.nama {
+    font-size: 1.8rem;
+  }
+  main .content #tentang .container-tentang {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .content #tentang .gambar img {
+    width: 10rem;
+  }
+  #skill .container-skill {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #skill .html img,
+  #skill .css img,
+  #skill .tkro img {
+    width: 150px;
+    height: 150px;
+  }
+  #project .container-project {
+    flex-direction: column;
+    align-items: center;
+  }
+  #project .to-do-list img,
+  #project .calculator img,
+  #project .simple-header img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  aside {
+    flex-direction: column;
+    align-items: center;
+  }
+  aside article.info {
+    width: 100%;
+    align-items: center;
+  }
+  aside article.info section.card {
+    width: 100%;
+  }
+  aside article.social-media {
+    width: 100%;
+  }
+  aside article.profile img {
+    width: 10rem;
+    height: 10rem;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main .content #tentang,
+  main .content #skill,
+  main .content #project {
+    padding-top: 140px;
+  }
+  main aside#contact {
+    padding-top: 165px;
+  }
+}
