@@ -152,7 +152,10 @@ main .content #tentang .gambar img {
 /* artikel skill */
 #skill .html img,
 #skill .css img,
-#skill .tkro img {
+#skill .tkro img,
+#skill .js img,
+#skill .react img,
+#skill .sass img {
   width: 200px;
   height: 200px;
 }
@@ -160,6 +163,7 @@ main .content #tentang .gambar img {
 #skill .container-skill {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-block: 2rem;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
 }
@@ -177,7 +181,9 @@ main .content #tentang .gambar img {
 /*artikel project*/
 #project .to-do-list img,
 #project .calculator img,
-#project .simple-header img {
+#project .simple-header img,
+#project .personal-notes-app img,
+#project .expense-tracker img {
   width: 480px;
 }
 
@@ -197,7 +203,9 @@ main .content #tentang .gambar img {
 
 #project .container-project .to-do-list p a,
 #project .container-project .calculator p a,
-#project .container-project .simple-header p a {
+#project .container-project .simple-header p a,
+#project .container-project .personal-notes-app p a,
+#project .container-project .expense-tracker p a {
   text-decoration: none;
   transition: color 0.2s;
   color: rgb(192, 132, 252);
